@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" fill="none">
+    <rect width="360" height="260" rx="12" fill="#0D1B2A"/>
+    <!-- Stand Base -->
+    <path d="M130 225 L 180 180 L 230 225 Z" fill="#334155" stroke="#475569" stroke-width="2"/>
+    <rect x="174" y="150" width="12" height="40" fill="#475569"/>
+    <!-- Curved Bezel -->
+    <path d="M40 50 Q 180 35, 320 50 L 320 170 Q 180 185, 40 170 Z" fill="#1E293B" stroke="#00D2FF" stroke-width="2"/>
+    <path d="M48 57 Q 180 43, 312 57 L 312 163 Q 180 177, 48 163 Z" fill="#0284C7"/>
+    <!-- Screen Horizon Graphic -->
+    <path d="M48 140 Q 180 100, 312 135 L 312 163 Q 180 177, 48 163 Z" fill="#075985"/>
+    <circle cx="180" cy="100" r="22" fill="#38BDF8" opacity="0.7"/>
+    <!-- Specs tag on screen -->
+    <rect x="60" y="70" width="85" height="20" rx="4" fill="#0F172A" opacity="0.8"/>
+    <text x="66" y="84" fill="#00D2FF" font-family="sans-serif" font-weight="700" font-size="10">2K • 165Hz • 1ms</text>
+  </svg>

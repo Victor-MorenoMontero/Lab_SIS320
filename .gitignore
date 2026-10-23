@@ -1,0 +1,17 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs y entornos locales
+*.log
+npm-debug.log*
+
+# Node modules (en caso de usar paquetes de desarrollo)
+node_modules/
+
+# IDE y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

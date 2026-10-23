@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" fill="none">
+    <defs>
+      <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0A192F"/>
+        <stop offset="50%" stop-color="#0D2040"/>
+        <stop offset="100%" stop-color="#050C1A"/>
+      </linearGradient>
+      <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0284C7"/>
+        <stop offset="50%" stop-color="#0369A1"/>
+        <stop offset="100%" stop-color="#075985"/>
+      </linearGradient>
+      <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00F0FF"/>
+        <stop offset="100%" stop-color="#0072FF"/>
+      </linearGradient>
+      <linearGradient id="towerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1E293B"/>
+        <stop offset="100%" stop-color="#0F172A"/>
+      </linearGradient>
+      <radialGradient id="deskGlow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#00D2FF" stop-opacity="0"/>
+      </radialGradient>
+      <filter id="shadowGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur"/>
+        <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+      </filter>
+    </defs>
+
+    <!-- Background card with subtle cyber grid -->
+    <rect width="800" height="520" rx="20" fill="url(#bgGlow)"/>
+    <ellipse cx="400" cy="460" rx="350" ry="40" fill="url(#deskGlow)"/>
+
+    <!-- Desk Surface Line -->
+    <line x1="60" y1="460" x2="740" y2="460" stroke="#1E293B" stroke-width="4"/>
+
+    <!-- ==================== TOWER PC (RIGHT) ==================== -->
+    <g transform="translate(560, 130)">
+      <!-- Case shadow -->
+      <rect x="10" y="320" width="180" height="15" rx="7" fill="#000" opacity="0.4"/>
+      <!-- Main Case Chassis -->
+      <rect x="10" y="10" width="170" height="310" rx="10" fill="url(#towerGrad)" stroke="#334155" stroke-width="2"/>
+      <!-- Tempered Glass Window -->
+      <rect x="25" y="25" width="140" height="225" rx="6" fill="#070D18" stroke="#1E293B" stroke-width="1.5"/>
+      <!-- Motherboard / Internal illumination -->
+      <rect x="35" y="35" width="120" height="150" rx="4" fill="#0B132B"/>
+      <!-- CPU Cooler AIO Liquid Block (Glowing Circle) -->
+      <circle cx="85" cy="85" r="22" fill="#0A192F" stroke="url(#cyanAccent)" stroke-width="3" filter="url(#shadowGlow)"/>
+      <circle cx="85" cy="85" r="14" fill="#00E5FF" opacity="0.8"/>
+      <!-- Liquid Tubes -->
+      <path d="M85 70 C 110 50, 130 50, 140 45" stroke="#00F0FF" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.8"/>
+      <path d="M85 100 C 110 115, 130 65, 140 55" stroke="#0072FF" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.8"/>
+      <!-- Dedicated GPU Card inside Tower -->
+      <rect x="35" y="125" width="120" height="32" rx="4" fill="#1E293B" stroke="#00F0FF" stroke-width="1.5"/>
+      <circle cx="65" cy="141" r="10" fill="#0F172A" stroke="#00D2FF" stroke-width="1.5"/>
+      <circle cx="95" cy="141" r="10" fill="#0F172A" stroke="#00D2FF" stroke-width="1.5"/>
+      <circle cx="125" cy="141" r="10" fill="#0F172A" stroke="#00D2FF" stroke-width="1.5"/>
+      <line x1="38" y1="130" x2="152" y2="130" stroke="#00F0FF" stroke-width="2"/>
+      <!-- Lower PSU Shroud -->
+      <rect x="25" y="255" width="140" height="55" rx="4" fill="#0B132B" stroke="#1E293B"/>
+      <text x="35" y="285" fill="#64748B" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="12">BYTEPRO 850W</text>
+      <!-- Front RGB Strip -->
+      <line x1="172" y1="20" x2="172" y2="310" stroke="url(#cyanAccent)" stroke-width="4" stroke-linecap="round" filter="url(#shadowGlow)"/>
+      <!-- Power Button -->
+      <circle cx="30" cy="18" r="3" fill="#00F0FF"/>
+      <rect x="42" y="16" width="24" height="4" rx="2" fill="#475569"/>
+    </g>
+
+    <!-- ==================== ULTRAWIDE MONITOR (CENTER) ==================== -->
+    <g transform="translate(140, 80)">
+      <!-- Monitor Stand Base -->
+      <path d="M170 375 L 210 330 L 250 375 Z" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+      <!-- Monitor Arm -->
+      <rect x="200" y="260" width="20" height="85" rx="4" fill="#334155"/>
+      <!-- Monitor Outer Frame (Curved Bezel) -->
+      <rect x="10" y="15" width="400" height="250" rx="10" fill="#0F172A" stroke="#1E293B" stroke-width="3"/>
+      <!-- Display Screen -->
+      <rect x="20" y="25" width="380" height="230" rx="6" fill="url(#screenGrad)"/>
+      
+      <!-- Tech HUD Graphics on Monitor -->
+      <!-- Top header bar on screen -->
+      <rect x="30" y="35" width="360" height="22" rx="3" fill="#0B192C" opacity="0.8"/>
+      <circle cx="42" cy="46" r="4" fill="#EF4444"/>
+      <circle cx="56" cy="46" r="4" fill="#F59E0B"/>
+      <circle cx="70" cy="46" r="4" fill="#10B981"/>
+      <text x="85" y="50" fill="#93C5FD" font-family="monospace" font-size="10">bytepro_hardware_engine.exe — [STATUS: 100% OPERATIONAL]</text>
+      
+      <!-- Chart / Visual analytics on screen -->
+      <path d="M40 180 Q 90 120, 140 150 T 240 110 T 340 90 L 370 130" stroke="#00F0FF" stroke-width="3" fill="none" filter="url(#shadowGlow)"/>
+      <path d="M40 180 Q 90 120, 140 150 T 240 110 T 340 90 L 370 130 L 370 200 L 40 200 Z" fill="#00F0FF" opacity="0.12"/>
+      
+      <!-- Specs Blocks on screen -->
+      <rect x="40" y="70" width="100" height="45" rx="4" fill="#082F49" stroke="#0284C7" stroke-width="1"/>
+      <text x="48" y="86" fill="#38BDF8" font-family="sans-serif" font-weight="700" font-size="9">CPU PERFORMANCE</text>
+      <text x="48" y="105" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="14">4.95 GHz</text>
+
+      <rect x="150" y="70" width="100" height="45" rx="4" fill="#082F49" stroke="#0284C7" stroke-width="1"/>
+      <text x="158" y="86" fill="#38BDF8" font-family="sans-serif" font-weight="700" font-size="9">GPU RENDERING</text>
+      <text x="158" y="105" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="14">165 FPS</text>
+
+      <rect x="260" y="70" width="120" height="45" rx="4" fill="#082F49" stroke="#0284C7" stroke-width="1"/>
+      <text x="268" y="86" fill="#38BDF8" font-family="sans-serif" font-weight="700" font-size="9">DDR5 LOW LATENCY</text>
+      <text x="268" y="105" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="14">6000 MT/s</text>
+      
+      <!-- Cyan Accent Under Screen -->
+      <line x1="20" y1="265" x2="400" y2="265" stroke="url(#cyanAccent)" stroke-width="2"/>
+    </g>
+
+    <!-- ==================== MECHANICAL KEYBOARD (FRONT) ==================== -->
+    <g transform="translate(160, 420)">
+      <rect x="0" y="0" width="260" height="32" rx="5" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+      <!-- Keycap rows with RGB gradient -->
+      <g fill="#1E293B" stroke="#00D2FF" stroke-width="0.6">
+        <rect x="6" y="4" width="16" height="6" rx="1.5"/>
+        <rect x="26" y="4" width="16" height="6" rx="1.5"/>
+        <rect x="46" y="4" width="16" height="6" rx="1.5"/>
+        <rect x="66" y="4" width="16" height="6" rx="1.5"/>
+        <rect x="86" y="4" width="16" height="6" rx="1.5"/>
+        <rect x="106" y="4" width="16" height="6" rx="1.5"/>
+        <rect x="126" y="4" width="16" height="6" rx="1.5"/>
+        <rect x="146" y="4" width="16" height="6" rx="1.5"/>
+        <rect x="166" y="4" width="16" height="6" rx="1.5"/>
+        <rect x="186" y="4" width="16" height="6" rx="1.5"/>
+        <rect x="206" y="4" width="16" height="6" rx="1.5"/>
+        <rect x="226" y="4" width="26" height="6" rx="1.5" fill="#0284C7"/>
+        
+        <rect x="6" y="13" width="22" height="6" rx="1.5"/>
+        <rect x="32" y="13" width="16" height="6" rx="1.5"/>
+        <rect x="52" y="13" width="16" height="6" rx="1.5"/>
+        <rect x="72" y="13" width="16" height="6" rx="1.5"/>
+        <rect x="92" y="13" width="16" height="6" rx="1.5"/>
+        <rect x="112" y="13" width="16" height="6" rx="1.5"/>
+        <rect x="132" y="13" width="16" height="6" rx="1.5"/>
+        <rect x="152" y="13" width="16" height="6" rx="1.5"/>
+        <rect x="172" y="13" width="16" height="6" rx="1.5"/>
+        <rect x="192" y="13" width="16" height="6" rx="1.5"/>
+        <rect x="212" y="13" width="40" height="6" rx="1.5" fill="#0284C7"/>
+
+        <!-- Spacebar row -->
+        <rect x="6" y="22" width="25" height="6" rx="1.5"/>
+        <rect x="35" y="22" width="22" height="6" rx="1.5"/>
+        <rect x="61" y="22" width="120" height="6" rx="1.5" stroke="#00F0FF" stroke-width="1.2"/>
+        <rect x="185" y="22" width="22" height="6" rx="1.5"/>
+        <rect x="211" y="22" width="41" height="6" rx="1.5"/>
+      </g>
+    </g>
+
+    <!-- ==================== PRECISION MOUSE (RIGHT OF KEYBOARD) ==================== -->
+    <g transform="translate(445, 415)">
+      <!-- Mousepad -->
+      <rect x="-10" y="-5" width="70" height="45" rx="4" fill="#070D18" stroke="#1E293B"/>
+      <!-- Mouse Body -->
+      <path d="M10 0 C 25 -5, 35 -5, 45 0 C 50 15, 50 30, 42 40 C 35 44, 20 44, 13 40 C 5 30, 5 15, 10 0 Z" fill="#1E293B" stroke="#334155" stroke-width="1.2"/>
+      <!-- Scroll Wheel & Accent -->
+      <rect x="25" y="5" width="4" height="10" rx="2" fill="#00F0FF"/>
+      <path d="M15 25 Q 27 20, 39 25" stroke="#00F0FF" stroke-width="1.5" fill="none" opacity="0.8"/>
+    </g>
+
+    <!-- Floating Badge (Left top) -->
+    <g transform="translate(40, 120)">
+      <rect width="130" height="70" rx="10" fill="#0F172A" stroke="#00F0FF" stroke-width="1.5" opacity="0.95"/>
+      <circle cx="25" cy="35" r="14" fill="#0284C7"/>
+      <path d="M21 35 L 24 38 L 29 32" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="46" y="30" fill="#94A3B8" font-family="sans-serif" font-size="10">Especialistas en</text>
+      <text x="46" y="47" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="12">Hardware PC</text>
+    </g>
+
+    <!-- Floating Badge (Left bottom) -->
+    <g transform="translate(40, 220)">
+      <rect width="130" height="70" rx="10" fill="#0F172A" stroke="#38BDF8" stroke-width="1" opacity="0.95"/>
+      <text x="16" y="28" fill="#38BDF8" font-family="sans-serif" font-weight="700" font-size="11">SOPORTE 100%</text>
+      <text x="16" y="46" fill="#F8FAFC" font-family="sans-serif" font-size="11">Equipos &amp; Partes</text>
+      <text x="16" y="59" fill="#64748B" font-family="sans-serif" font-size="9">USFX • BytePro Lab</text>
+    </g>
+  </svg>

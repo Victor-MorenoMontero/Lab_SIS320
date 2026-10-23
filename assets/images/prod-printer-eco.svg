@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" fill="none">
+    <rect width="360" height="260" rx="12" fill="#0D1B2A"/>
+    <!-- Top paper input -->
+    <rect x="115" y="30" width="130" height="35" rx="4" fill="#FFFFFF"/>
+    <line x1="130" y1="42" x2="225" y2="42" stroke="#CBD5E1" stroke-width="2"/>
+    <line x1="130" y1="50" x2="200" y2="50" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- Printer main body -->
+    <rect x="60" y="65" width="240" height="135" rx="10" fill="#1E293B" stroke="#00D2FF" stroke-width="2"/>
+    <!-- Scanner flatbed -->
+    <rect x="60" y="65" width="240" height="28" rx="6" fill="#334155"/>
+    <circle cx="275" cy="79" r="5" fill="#00F0FF"/>
+
+    <!-- Output Paper Sheet -->
+    <rect x="95" y="140" width="170" height="50" rx="4" fill="#0F172A" stroke="#475569"/>
+    <rect x="115" y="155" width="130" height="40" rx="2" fill="#FFFFFF"/>
+    <line x1="125" y1="168" x2="215" y2="168" stroke="#0284C7" stroke-width="2.5"/>
+    <line x1="125" y1="178" x2="195" y2="178" stroke="#94A3B8" stroke-width="2"/>
+
+    <!-- Continuous Ink Reservoir (Ecotank style) -->
+    <rect x="72" y="102" width="55" height="26" rx="4" fill="#0A192F" stroke="#38BDF8" stroke-width="1"/>
+    <circle cx="82" cy="115" r="4.5" fill="#00D2FF"/>
+    <circle cx="94" cy="115" r="4.5" fill="#EC4899"/>
+    <circle cx="106" cy="115" r="4.5" fill="#FACC15"/>
+    <circle cx="118" cy="115" r="4.5" fill="#475569"/>
+  </svg>
